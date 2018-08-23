@@ -33,6 +33,21 @@
 			<property name="apellidos" value="Khollala"></property>
 			<property name="dni" value="47956835-J"></property>
 		</bean>
+		
+		<bean id="student" class="com.privalia.entity.Student">
+			<property name="idStudent" value="1"></property>
+			<property name="name" value="Osama"></property>
+			<property name="surname" value="Khollala"></property>
+			<property name="age" value="20"></property>
+			<property name="address"> 
+				<ref bean="address"/> 
+			</property>
+		</bean>
+		
+		<bean id="address" class="com.privalia.entity.Address">
+			<constructor-arg index = "0" value="1" type="int"/>
+			<constructor-arg index = "1" value="BCN" type="java.lang.String"/>
+		</bean>
 
 </beans>
 
