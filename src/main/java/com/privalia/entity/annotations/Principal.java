@@ -11,8 +11,7 @@ public class Principal {
 		annotationContext.scan("com.privalia.entity.annotations");
 		annotationContext.refresh();
 		
-		Student student = (Student) annotationContext.getBean("student");
-		Address address = (Address) annotationContext.getBean("address");
+		Student student = (Student) annotationContext.getBean(Student.class);
 		
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append(student.getIdStudent());
@@ -23,9 +22,9 @@ public class Principal {
 		stringBuilder.append(" ");
 		stringBuilder.append(student.getAge());
 		stringBuilder.append(" ");
-		stringBuilder.append(address.getIdAddress());
+		stringBuilder.append(student.getAddress().getIdAddress());
 		stringBuilder.append(" ");
-		stringBuilder.append(address.getStreet());
+		stringBuilder.append(student.getAddress().getStreet());
 		System.out.println(stringBuilder.toString());
 		
 		annotationContext.close();
