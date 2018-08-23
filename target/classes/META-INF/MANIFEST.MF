@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Built-By: User
+Class-Path: dependency-jars/spring-core-4.3.14.RELEASE.jar dependency-
+ jars/commons-logging-1.2.jar dependency-jars/spring-context-4.3.14.RE
+ LEASE.jar dependency-jars/spring-beans-4.3.14.RELEASE.jar dependency-
+ jars/spring-aop-4.3.14.RELEASE.jar dependency-jars/spring-expression-
+ 4.3.14.RELEASE.jar dependency-jars/cglib-2.2.jar dependency-jars/asm-
+ 3.1.jar dependency-jars/slf4j-api-1.7.25.jar dependency-jars/slf4j-lo
+ g4j12-1.7.25.jar dependency-jars/log4j-1.2.16.jar dependency-jars/asp
+ ectjweaver-1.6.11.jar
+Build-Jdk: 1.8.0_161
+Created-By: Maven Integration for Eclipse
+Main-Class: com.privalia.presentation.Principal
+
